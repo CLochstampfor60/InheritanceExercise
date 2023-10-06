@@ -22,7 +22,9 @@ namespace Inheritance
         public bool Beak { get; set; }
 
 
-        public bool Wings { get; set; }
+        public int Wings { get; set; }
+
+        public string OriginLocation { get; set; }
 
         public Bird() { }
 
@@ -36,7 +38,8 @@ namespace Inheritance
             string featherColor,
             bool warmBlooded,
             bool beak,
-            bool wings
+            int wings,
+            string originLocation
             )
         {
             Name = name;
@@ -49,6 +52,7 @@ namespace Inheritance
             WarmBlooded = warmBlooded;
             Beak = beak;
             Wings = wings;
+            OriginLocation = originLocation;
         }
     }
 }

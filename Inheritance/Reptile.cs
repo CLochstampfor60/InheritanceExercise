@@ -20,6 +20,8 @@ namespace Inheritance
 
         public string TongueSize { get; set; }
 
+        public string OriginLocation { get; set; }
+
         public Reptile() { }
 
         public Reptile(
@@ -31,7 +33,8 @@ namespace Inheritance
             bool laysEggsOnLand,
             string scaleColor,
             bool coldBlooded,
-            string tongueSize
+            string tongueSize,
+            string originLocation
             ) 
         {
             Name = name;
@@ -43,6 +46,7 @@ namespace Inheritance
             ScaleColor = scaleColor;
             ColdBlooded = coldBlooded;
             TongueSize = tongueSize;
+            OriginLocation = originLocation;
         }
     }
 }
