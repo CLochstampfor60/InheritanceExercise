@@ -12,30 +12,37 @@ namespace Inheritance
     public class Reptile : Animal
     {
 
-        /*public bool LaysEggsOnLand { get; set; }*/
-        public void LaysEggsOnLand()
+        public bool LaysEggsOnLand { get; set; }
+
+        public string ScaleColor { get; set; }
+
+        public bool ColdBlooded { get; set; }
+
+        public string TongueSize { get; set; }
+
+        public Reptile() { }
+
+        public Reptile(
+            string name, 
+            bool multicellular,
+            int legs,
+            bool huntsFood,
+            int age,
+            bool laysEggsOnLand,
+            string scaleColor,
+            bool coldBlooded,
+            string tongueSize
+            ) 
         {
-            Console.WriteLine($"Reptiles lay eggs, but only on land. Never in the water.");
+            Name = name;
+            Multicellular = multicellular;
+            Legs = legs;
+            HuntsFood = huntsFood;
+            Age = age;
+            LaysEggsOnLand = laysEggsOnLand;
+            ScaleColor = scaleColor;
+            ColdBlooded = coldBlooded;
+            TongueSize = tongueSize;
         }
-
-        /*public bool CoveredInScales { get; set; }*/
-        public void CoveredInScales()
-        {
-            Console.WriteLine($"Reptiles are completely covered in scales.");
-        }
-
-        /* public bool ColdBlooded { get; set; }*/
-        public void ColdBlooded()
-        {
-            Console.WriteLine($"Reptiles are cold-blooded creatures, the opposite of many other animal species.");
-        }
-
-
-        /*public int NumberOfLegs { get; set; }*/
-        public void HaveLegs()
-        {
-            Console.WriteLine($"Reptiles usually have two legs, but sometimes have four legs.");
-        }
-
     }
 }

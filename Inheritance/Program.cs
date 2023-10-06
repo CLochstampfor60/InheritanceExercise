@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.NetworkInformation;
+using System.Xml.Linq;
 
 namespace Inheritance
 {
@@ -13,26 +15,42 @@ namespace Inheritance
               var 
              * Creatively display the class member values 
              */
-            var BaldEagle = new Bird();
+            var Wing_Dragon_Of_Ra = new Bird();
+            {
+                Name = name;
+                Multicellular = multicellular;
+                Legs = legs;
+                HuntsFood = huntsFood;
+                Age = age;
+                LaysEggs = layseggs;
+                FeatherColor = featherColor;
+                WarmBlooded = warmBlooded;
+                Beak = beak;
+                Wings = wings;
+            }
 
-            Console.Write("\nBald Eagles are birds that share the following biological and actionable traits with other birds:\n");
-            BaldEagle.HasLegs();
-            BaldEagle.WarmBlooded();
-            BaldEagle.HasFeathers();
-            BaldEagle.HasWings();
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
-            var KomodoDragon = new Reptile();
+            var Shenron = new Reptile();
+            {
+                Name = name;
+                Multicellular = multicellular;
+                Legs = legs;
+                HuntsFood = huntsFood;
+                Age = age;
+                LaysEggs = layseggs;
+                FeatherColor = featherColor;
+                WarmBlooded = warmBlooded;
+                Beak = beak;
+                Wings = wings;
+            }
 
-            Console.Write("\nKomodo Dragons are reptiles share the following biological and actionable traits with other reptiles:\n");
-            KomodoDragon.ColdBlooded();
-            KomodoDragon.CoveredInScales();
-            KomodoDragon.LaysEggsOnLand();
-            KomodoDragon.HaveLegs();
+
         }
     }
 }

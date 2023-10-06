@@ -11,34 +11,44 @@ namespace Inheritance
     // Set this class to inherit from your Animal Class
     public class Bird : Animal
     {
-        /*public string LaysEggs { get; set; }*/
-        public void LaysEggs()
-        {
-            Console.WriteLine($"Birds lay eggs during the procreation process,");
-        }
+        public int LaysEggs { get; set; }
 
-        /*public bool CoveredInFeathers { get; set; }*/
-        public void HasFeathers()
-        {
-            Console.WriteLine($"Birds are completely covered with feathers,");
-        }
+        public string FeatherColor { get; set; }
 
-        /*public bool WarmBlooded { get; set; }*/
-        public void WarmBlooded()
-        {
-            Console.WriteLine($"Birds are warm-blooded animals,");
-        }
 
-        /* public int NumberOfLegs { get; set; }*/
-        public void HasLegs()
-        {
-            Console.WriteLine($"Birds have two legs,");
-        }
+        public bool WarmBlooded { get; set; }
+ 
 
-        /*  public bool Wings { get; set; }*/
-        public void HasWings()
+        public bool Beak { get; set; }
+
+
+        public bool Wings { get; set; }
+
+        public Bird() { }
+
+        public Bird(
+            string name,
+            bool multicellular,
+            int legs,
+            bool huntsFood,
+            int age,
+            int layseggs,
+            string featherColor,
+            bool warmBlooded,
+            bool beak,
+            bool wings
+            )
         {
-            Console.WriteLine($"Birds have two wings,");
+            Name = name;
+            Multicellular = multicellular;
+            Legs = legs;
+            HuntsFood = huntsFood;
+            Age = age;
+            LaysEggs = layseggs;
+            FeatherColor = featherColor;
+            WarmBlooded = warmBlooded;
+            Beak = beak;
+            Wings = wings;
         }
     }
 }
